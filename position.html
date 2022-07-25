@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            width: 100%;
+            height: 700px;
+            background-image: url("images/a.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation-name: caro;
+            animation-timing-function: ease-in-out;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            
+        }
+
+        @keyframes caro {
+            0%{
+                background-image: url("images/b.jpg");
+            }
+            25%{
+                background-image: url("images/c.jpg");
+            }
+            50%{
+                background-image: url("images/d.jpg");
+            }
+            75%{
+                background-image: url("images/e.jpg");
+            }
+            100%{
+                background-image: url("images/f.jpg");
+            }
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .links ul {
+            display: flex;
+            list-style: none;
+            
+        }
+
+        .links ul li{
+            padding-right: 30px;
+        }
+
+        .links ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            border-right: 5px solid white;
+            padding-right: 10px;
+        }
+        .links ul li button {
+            background-color: transparent;
+            border: solid 3px white;
+            padding: 5px 20px;
+            border-radius: 30px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .links ul li button:hover{
+            background-image: linear-gradient(to right, red,blue);
+        }
+
+        .logo {
+            color: white;
+        }
+
+        #active{
+            color: red;
+            border-bottom: 5px solid;
+            padding-bottom: 10px;
+        }
+
+        .assign{
+            margin-top: 5%;
+        }
+        .assign h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .assign p{
+            border: 2px solid white;
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 70%;
+            margin-left: 15%;
+            color: white;
+            text-align: left;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .but{
+            margin-left: 40%;
+            margin-right: 30%;
+            justify-content: space-between;
+           
+        }
+
+        .but ul {
+           display: flex;
+           list-style-type: none; 
+           
+        }
+
+        .but ul li{
+            margin: 0 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+       <div class="nav">
+           <div class="logo"><H2>LOGO</H2></div>
+           <div class="links">
+               <ul>
+                   <li><a href="#" id="active">HOME</a></li>
+                   <li><a href="#">ABOUT US</a></li>
+                   <li><a href="#">PORTFOLIO</a></li>
+                   <li><a href="#">CONTGACT US</a></li>
+                   <li><button>Login</button></li>
+               </ul>
+           </div>
+       </div>
+
+       <div class="assign">
+           <h1>THIS IS MY HEADING</h1>
+           <P>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque minus provident accusamus, impedit, repudiandae sunt, reiciendis laboriosam perspiciatis in quaerat facilis molestias minima consectetur ipsum neque illo ex delectus sapiente!
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, nostrum. Dignissimos aut deserunt unde iusto in culpa ad inventore saepe dolorem sunt beatae esse, facilis soluta non eveniet atque at?
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odit optio sequi at, ducimus architecto, ipsa perferendis ad eaque voluptatum qui. Illo ipsam cumque modi, magni blanditiis eveniet earu
+           </P>
+           <div class="but">
+               <ul>
+                   <li><button id="one">Find out more</button></li>
+                   <li> <button id="two">Sign up now</button></li>
+               </ul>
+           </div>
+           
+       </div>
+    </div>
+</body>
+</html>

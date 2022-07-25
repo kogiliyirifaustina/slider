@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>SLIDE SHOW</title>
+    <style>
+        .container {
+            height: 800px;
+            width: 100% 100%;
+            background-image: url("images/1.jpg");
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation-name: slide;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+             }
+
+             @keyframes slide {
+                 0%{
+                     background-image: url("images/2.jpg");
+                 }
+                 25%{
+                     background-image: url("images/3.jpg");
+                 }
+                 50%{
+                     background-image: url("images/4.jpg");
+                 }
+                 75%{
+                     background-image: url("images/5.jpg");
+                 }
+                 100%{
+                     background-image: url("images/6.jpg");
+                 }
+             }
+
+             .text {
+                background-color: rgb(0, 0, 0);
+                background-color: rgba(0,0,0,0.4);
+                color: white;
+                font-weight: bold;
+                border: 3px solid #f1f1f1;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                width: 50%;
+                padding: 20px;
+                text-align: center;
+             }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>THIS IS MY WEBPAGE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae non minima ullam dolorum libero similique doloremque dolorem porro nisi quisquam illo incidunt tempora totam, magnam hic id? Error, quas asperiores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur fugiat commodi asperiores molestiae. Eligendi deserunt, repellendus est, voluptatem, ratione accusamus ducimus nulla necessitatibus eveniet natus sed quo non autem maxime?</p>
+        </div>
+        
+    </div>
+</body>
+</html>
